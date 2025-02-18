@@ -1,5 +1,13 @@
 <!DOCTYPE html>
-<html lang="en" class="scroll-smooth">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enhanced Landing Page</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <html lang="en" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,34 +15,52 @@
     <meta name="description" content="Create stunning websites in minutes with our AI-powered website builder. No coding required.">
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body class="bg-gray-900 text-gray-100 font-inter antialiased">
     <!-- Header -->
     <header class="fixed w-full z-50 bg-gray-900/95 backdrop-blur-sm border-b border-gray-800">
         <nav class="container mx-auto px-6 py-4">
             <div class="flex items-center justify-between">
-                <a href="/" class="text-2xl font-bold text-white">WebComedia</a>
+                <a href="https://windwardboy.github.io/build-your-website-in-minutes--not-days-2025-02-18-zw2o9" class="text-2xl font-bold text-white hover:text-blue-400 transition-colors duration-300">WebComedia</a>
                 <div class="hidden md:flex space-x-8">
                     <a href="#features" class="text-gray-300 hover:text-white transition-colors duration-300">Features</a>
+                    <a href="#video" class="text-gray-300 hover:text-white transition-colors duration-300">Video</a>
                     <a href="#benefits" class="text-gray-300 hover:text-white transition-colors duration-300">Benefits</a>
+                    <a href="#testimonials" class="text-gray-300 hover:text-white transition-colors duration-300">Testimonials</a>
+                    <a href="#about" class="text-gray-300 hover:text-white transition-colors duration-300">About</a>
                     <a href="#faq" class="text-gray-300 hover:text-white transition-colors duration-300">FAQ</a>
-                    <a href="https://webcomedia.net" class="px-6 py-2 bg-blue-600 text-white rounded-full hover:bg-blue-700 transition-all duration-300 transform hover:scale-105">Get Started</a>
+                    <a href="https://webcomedia.net" class="px-6 py-2 bg-blue-600 text-white rounded-full hover:bg-blue-700 transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-blue-600/25">Get Started</a>
+                </div>
+                <button class="mobile-menu-button md:hidden" aria-label="Toggle Menu">
+                    <i class="fas fa-bars text-2xl"></i>
+                </button>
+            </div>
+            <div class="mobile-menu hidden md:hidden mt-4 bg-gray-800 rounded-lg p-4">
+                <div class="flex flex-col space-y-4">
+                    <a href="#features" class="text-gray-300 hover:text-white transition-colors duration-300">Features</a>
+                    <a href="#video" class="text-gray-300 hover:text-white transition-colors duration-300">Video</a>
+                    <a href="#benefits" class="text-gray-300 hover:text-white transition-colors duration-300">Benefits</a>
+                    <a href="#testimonials" class="text-gray-300 hover:text-white transition-colors duration-300">Testimonials</a>
+                    <a href="#about" class="text-gray-300 hover:text-white transition-colors duration-300">About</a>
+                    <a href="#faq" class="text-gray-300 hover:text-white transition-colors duration-300">FAQ</a>
+                    <a href="https://webcomedia.net" class="px-6 py-2 bg-blue-600 text-white rounded-full hover:bg-blue-700 transition-all duration-300 transform hover:scale-105 text-center">Get Started</a>
                 </div>
             </div>
         </nav>
     </header>
 
     <!-- Hero Section -->
-    <section class="relative min-h-screen flex items-center pt-24">
+    <section class="relative min-h-screen flex items-center pt-24 bg-gradient-to-br from-gray-900 via-blue-900 to-gray-900">
         <div class="absolute inset-0 z-0">
             <img src="https://images.unsplash.com/photo-1557804506-669a67965ba0" alt="Background" class="w-full h-full object-cover opacity-25">
-            <div class="absolute inset-0 bg-gray-900/75"></div>
+            <div class="absolute inset-0 bg-gradient-to-br from-gray-900/90 via-blue-900/75 to-gray-900/90"></div>
         </div>
         <div class="container mx-auto px-6 relative z-10">
             <div class="max-w-4xl mx-auto text-center">
-                <h1 class="text-4xl md:text-6xl font-bold leading-tight mb-8">Build Your Website in Minutes, Not Days</h1>
-                <p class="text-xl md:text-2xl text-gray-300 mb-12">Best AI Website Builder, No Code Required</p>
-                <a href="https://webcomedia.net" class="inline-block px-8 py-4 text-lg font-semibold bg-blue-600 text-white rounded-full hover:bg-blue-700 transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-blue-600/25">Start Building Now</a>
+                <h1 class="text-4xl md:text-6xl font-bold leading-tight mb-8 animate-fade-in">Build Your Website in Minutes, Not Days</h1>
+                <p class="text-xl md:text-2xl text-gray-300 mb-12">Transform your ideas into reality with our AI-powered website builder. No coding skills required - just your vision and our technology.</p>
+                <a href="https://webcomedia.net" class="inline-block px-8 py-4 text-lg font-semibold bg-blue-600 text-white rounded-full hover:bg-blue-700 transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-blue-600/25">Start Building Now - It's Free!</a>
             </div>
         </div>
     </section>
@@ -42,61 +68,130 @@
     <!-- Features Section -->
     <section id="features" class="py-24 bg-gray-800">
         <div class="container mx-auto px-6">
-            <h2 class="text-3xl md:text-4xl font-bold text-center mb-16">Powerful Features</h2>
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-16">Powerful Features That Set Us Apart</h2>
             <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
-                <div class="bg-gray-700/50 p-8 rounded-2xl hover:transform hover:scale-105 transition-all duration-300">
+                <div class="bg-gray-700/50 p-8 rounded-2xl hover:transform hover:scale-105 transition-all duration-300 hover:shadow-xl hover:shadow-blue-600/10">
                     <svg class="w-12 h-12 text-blue-500 mb-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 12h14M12 5l7 7-7 7"/>
                     </svg>
-                    <h3 class="text-xl font-semibold mb-4">Free Hosting</h3>
-                    <p class="text-gray-300">Deploy your website instantly with our premium hosting infrastructure at no additional cost.</p>
+                    <h3 class="text-xl font-semibold mb-4">Enterprise-Grade Hosting Included</h3>
+                    <p class="text-gray-300">Get lightning-fast hosting with 99.9% uptime guarantee, SSL certificates, and global CDN delivery - all included at no extra cost.</p>
                 </div>
-                <div class="bg-gray-700/50 p-8 rounded-2xl hover:transform hover:scale-105 transition-all duration-300">
+                <div class="bg-gray-700/50 p-8 rounded-2xl hover:transform hover:scale-105 transition-all duration-300 hover:shadow-xl hover:shadow-blue-600/10">
                     <svg class="w-12 h-12 text-blue-500 mb-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/>
                     </svg>
-                    <h3 class="text-xl font-semibold mb-4">Fast Loading</h3>
-                    <p class="text-gray-300">Lightning-fast page loads with optimized performance and global CDN delivery.</p>
+                    <h3 class="text-xl font-semibold mb-4">Blazing Fast Performance</h3>
+                    <p class="text-gray-300">Experience sub-second page loads with our optimized infrastructure. Your website will load instantly, keeping visitors engaged and improving SEO rankings.</p>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Video Section -->
-    <section class="py-24 bg-gray-900">
+    <section id="video" class="py-24 bg-gray-900">
         <div class="container mx-auto px-6">
-            <h2 class="text-3xl md:text-4xl font-bold text-center mb-16">See It in Action</h2>
-            <div class="max-w-4xl mx-auto relative rounded-2xl overflow-hidden shadow-2xl">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-8">See Our Platform in Action</h2>
+            <p class="text-xl text-gray-300 text-center mb-16">Watch how easy it is to create your professional website in minutes</p>
+            <div class="max-w-4xl mx-auto relative rounded-2xl overflow-hidden shadow-2xl hover:shadow-blue-600/25 transition-shadow duration-300">
                 <div class="relative pb-[56.25%]">
                     <iframe class="absolute inset-0 w-full h-full" src="https://www.youtube.com/embed/yZSF__bzRSM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </div>
+            <p class="text-center mt-8 text-gray-300">Learn how our AI-powered platform revolutionizes website creation</p>
+        </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section id="benefits" class="py-24 bg-gray-800">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-16">Why Choose WebComedia?</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+                <div class="bg-gray-700/50 p-8 rounded-2xl hover:transform hover:scale-105 transition-all duration-300">
+                    <h3 class="text-xl font-semibold mb-4">Save Time & Money</h3>
+                    <p class="text-gray-300">Build your website in minutes instead of weeks. No need to hire expensive developers or designers.</p>
+                </div>
+                <div class="bg-gray-700/50 p-8 rounded-2xl hover:transform hover:scale-105 transition-all duration-300">
+                    <h3 class="text-xl font-semibold mb-4">Professional Results</h3>
+                    <p class="text-gray-300">Get a stunning, mobile-responsive website that looks like it was crafted by a professional design team.</p>
+                </div>
+                <div class="bg-gray-700/50 p-8 rounded-2xl hover:transform hover:scale-105 transition-all duration-300">
+                    <h3 class="text-xl font-semibold mb-4">24/7 Support</h3>
+                    <p class="text-gray-300">Our dedicated support team is always ready to help you succeed with your website.</p>
                 </div>
             </div>
         </div>
     </section>
 
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="py-24 bg-gray-900">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-16">What Our Customers Say</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 max-w-6xl mx-auto">
+                <div class="bg-gray-800 p-8 rounded-2xl hover:transform hover:scale-105 transition-all duration-300">
+                    <div class="flex text-yellow-400 mb-4">
+                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                    </div>
+                    <p class="text-gray-300 mb-4">"I was able to create a professional-looking website for my business in just 2 hours. The AI suggestions were incredibly helpful, and the whole process was intuitive. Highly recommended!"</p>
+                    <div class="font-semibold">Sarah Johnson</div>
+                    <div class="text-sm text-gray-400">CEO, Digital Solutions Inc.</div>
+                </div>
+                <div class="bg-gray-800 p-8 rounded-2xl hover:transform hover:scale-105 transition-all duration-300">
+                    <div class="flex text-yellow-400 mb-4">
+                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                    </div>
+                    <p class="text-gray-300 mb-4">"The speed and quality of the websites created with WebComedia are outstanding. Our e-commerce site saw a 40% increase in conversions after switching to their platform."</p>
+                    <div class="font-semibold">Michael Chen</div>
+                    <div class="text-sm text-gray-400">Founder, TechStyle Shop</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about" class="py-24 bg-gray-800">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-16">About WebComedia</h2>
+            <div class="max-w-3xl mx-auto text-center">
+                <p class="text-gray-300 leading-relaxed">Founded in 2022, WebComedia has revolutionized website creation by combining cutting-edge AI technology with user-friendly design. Our mission is to democratize web development, making it accessible to everyone regardless of their technical background. With a team of passionate developers and designers, we're committed to helping businesses and individuals create stunning websites that drive results.</p>
+            </div>
+        </div>
+    </section>
+
     <!-- FAQ Section -->
-    <section id="faq" class="py-24 bg-gray-800">
+    <section id="faq" class="py-24 bg-gray-900">
         <div class="container mx-auto px-6">
             <h2 class="text-3xl md:text-4xl font-bold text-center mb-16">Frequently Asked Questions</h2>
             <div class="max-w-3xl mx-auto space-y-6">
-                <div class="bg-gray-700/50 rounded-lg p-6">
+                <div class="bg-gray-800 rounded-lg p-6 hover:shadow-lg hover:shadow-blue-600/10 transition-all duration-300">
                     <h3 class="text-xl font-semibold mb-4">How does the AI website builder work?</h3>
-                    <p class="text-gray-300">Our AI analyzes your requirements and automatically generates a custom website design that matches your brand and needs.</p>
+                    <p class="text-gray-300">Our advanced AI analyzes your requirements, brand elements, and content to automatically generate a custom website design that perfectly matches your vision. The AI learns from thousands of successful websites to create optimized layouts and suggest the best design elements for your specific needs.</p>
                 </div>
-                <div class="bg-gray-700/50 rounded-lg p-6">
-                    <h3 class="text-xl font-semibold mb-4">Do I need coding experience?</h3>
-                    <p class="text-gray-300">No coding experience required! Our platform is completely no-code and user-friendly.</p>
+                <div class="bg-gray-800 rounded-lg p-6 hover:shadow-lg hover:shadow-blue-600/10 transition-all duration-300">
+                    <h3 class="text-xl font-semibold mb-4">Do I need any coding experience?</h3>
+                    <p class="text-gray-300">Absolutely not! Our platform is completely no-code and user-friendly. You can create a professional website using our intuitive drag-and-drop interface and AI-powered suggestions. We handle all the technical aspects while you focus on your content and design preferences.</p>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- CTA Section -->
-    <section class="py-24 bg-gradient-to-r from-blue-600 to-blue-800">
-        <div class="container mx-auto px-6 text-center">
-            <h2 class="text-3xl md:text-4xl font-bold mb-8">Ready to Build Your Website?</h2>
-            <p class="text-xl mb-12">Join thousands of satisfied customers who built their dream websites</p>
-            <a href="https://webcomedia.net" class="inline-block px-8 py-4 text-lg font-semibold bg-white text-blue-600 rounded-full hover:bg-gray-100 transition-all duration-300 transform hover:scale-105 shadow-lg">Get Started Now</a>
+    <section class="py-24 bg-gradient-to-r from-blue-600 to-blue-800 relative overflow-hidden">
+        <div class="absolute inset-0 z-0">
+            <img src="https://images.unsplash.com/photo-1551434678-e076c223a692" alt="Background" class="w-full h-full object-cover opacity-10">
+        </div>
+        <div class="container mx-auto px-6 text-center relative z-10">
+            <h2 class="text-3xl md:text-4xl font-bold mb-8">Ready to Build Your Dream Website?</h2>
+            <p class="text-xl mb-12 max-w-2xl mx-auto">Join thousands of satisfied customers who built their dream websites in minutes. Start your journey today!</p>
+            <a href="https://webcomedia.net" class="inline-block px-8 py-4 text-lg font-semibold bg-white text-blue-600 rounded-full hover:bg-gray-100 transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-white/25">Get Started Now - It's Free!</a>
         </div>
     </section>
 
@@ -106,35 +201,31 @@
             <div class="grid grid-cols-1 md:grid-cols-4 gap-12">
                 <div>
                     <h3 class="text-xl font-bold mb-4">WebComedia</h3>
-                    <p class="text-gray-400">Building the future of web development</p>
+                    <p class="text-gray-400">Building the future of web development with AI-powered solutions.</p>
                 </div>
                 <div>
-                    <h4 class="text-lg font-semibold mb-4">Contact</h4>
-                    <a href="mailto:info@webcomedia.net" class="text-gray-400 hover:text-white transition-colors duration-300">info@webcomedia.net</a>
+                    <h4 class="text-lg font-semibold mb-4">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#features" class="text-gray-400 hover:text-white transition-colors duration-300">Features</a></li>
+                        <li><a href="#testimonials" class="text-gray-400 hover:text-white transition-colors duration-300">Testimonials</a></li>
+                        <li><a href="https://windwardboy.github.io/build-your-website-in-minutes--not-days-2025-02-18-zw2o9/blog.html" class="text-gray-400 hover:text-white transition-colors duration-300">Blog</a></li>
+                    </ul>
                 </div>
                 <div>
                     <h4 class="text-lg font-semibold mb-4">Legal</h4>
                     <ul class="space-y-2">
-                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors duration-300">Privacy Policy</a></li>
-                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors duration-300">Terms of Service</a></li>
+                        <li><a href="https://windwardboy.github.io/build-your-website-in-minutes--not-days-2025-02-18-zw2o9/privacy.html" class="text-gray-400 hover:text-white transition-colors duration-300">Privacy Policy</a></li>
+                        <li><a href="https://windwardboy.github.io/build-your-website-in-minutes--not-days-2025-02-18-zw2o9/terms.html" class="text-gray-400 hover:text-white transition-colors duration-300">Terms of Service</a></li>
                     </ul>
                 </div>
                 <div>
-                    <h4 class="text-lg font-semibold mb-4">Follow Us</h4>
-                    <div class="flex space-x-4">
+                    <h4 class="text-lg font-semibold mb-4">Contact</h4>
+                    <a href="mailto:info@webcomedia.net" class="text-gray-400 hover:text-white transition-colors duration-300 block mb-2">info@webcomedia.net</a>
+                    <div class="flex space-x-4 mt-4">
                         <a href="#" class="text-gray-400 hover:text-white transition-colors duration-300">
                             <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
                         </a>
                         <a href="#" class="text-gray-400 hover:text-white transition-colors duration-300">
-                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/></svg>
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <div class="mt-12 pt-8 border-t border-gray-800 text-center text-gray-400">
-                <p>&copy; 2024 WebComedia. All rights reserved.</p>
-            </div>
-        </div>
-    </footer>
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6
 </body>
 </html>
